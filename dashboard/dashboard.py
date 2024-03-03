@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import seaborn as sns
 import streamlit as st
 
+st.set_page_config(page_title="Air Quality Dashboard 2013-2017 in 3 station Beijing 🇨🇳", layout="wide")
 custom_category_order = [
     "Good",
     "Moderate",
@@ -115,6 +116,7 @@ def calculate_air_quality_percentage_per_year(df, custom_category_order):
 
 # Load data
 combine_df = pd.read_csv('https://raw.githubusercontent.com/bulgogipedas/air-quality-streamlit/main/dashboard/combine_df.csv')
+
 datetime_columns = ['date']
 combine_df.sort_values(by="date", inplace=True)
 combine_df.reset_index(inplace=True)
