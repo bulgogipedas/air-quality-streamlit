@@ -12,9 +12,8 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 streamlit run dashboard.py
 ```
 
-## Libraries Req
+## Libraries Requirement
 ```bash
-matplotlib==3.7.1
 matplotlib==3.8.3
 pandas==1.5.3
 plotly==5.19.0
