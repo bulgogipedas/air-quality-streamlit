@@ -114,7 +114,7 @@ def calculate_air_quality_percentage_per_year(df, custom_category_order):
     return air_quality_percentage_per_year
 
 # Load data
-combine_df = pd.read_csv('/Users/topokkipedas/Documents/Bangkit/analisis_data/submission/dashboard/combine_df.csv')
+combine_df = pd.read_csv('https://raw.githubusercontent.com/bulgogipedas/air-quality-streamlit/main/dashboard/combine_df.csv')
 datetime_columns = ['date']
 combine_df.sort_values(by="date", inplace=True)
 combine_df.reset_index(inplace=True)
